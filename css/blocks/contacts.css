@@ -1,0 +1,114 @@
+.contacts {
+  padding: 64px 90px 64px;
+  background-color: #252525;
+}
+
+.container-contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.submit-container {
+  border-radius: 18px;
+  height: 666px;
+  width: 610px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-heading {
+  font-weight: bold;
+  font-size: 58px;
+  color: #fff;
+  line-height: 120%;
+  margin-bottom: 30px;
+  margin-left: -35px;
+}
+
+.number-email {
+  font-size: 24px;
+  color: #fff;
+  margin-left: 8px;
+}
+
+.map-div {
+  padding-top: 30px;
+}
+.map-div img {
+  width: 886px;
+  margin-left: -25px;
+}
+
+.connection {
+  position: relative;
+}
+
+.telephone {
+  position: absolute;
+  top: 105px;
+  left: -34px;
+  width: 30px;
+}
+
+.address {
+  position: absolute;
+  left: -33px;
+  top: 209px;
+  width: 30px;
+}
+
+.email {
+  position: absolute;
+  left: -34px;
+  top: 287px;
+  width: 30px;
+}
+
+.submit-heading {
+  font-size: 43px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.submit-btn a.btn {
+  background-color: #f55d3e;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.privacy-policy {
+  font-family: "Gotham Pro";
+  text-align: center;
+  font-size: 15px;
+  max-width: 490px;
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.submit-container form {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.submit-container label {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.submit-container input {
+  width: 422px;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #252525;
+  opacity: 0.5;
+  font-size: 19px;
+}

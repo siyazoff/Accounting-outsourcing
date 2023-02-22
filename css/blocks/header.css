@@ -1,0 +1,63 @@
+.first-header {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.header-logo img {
+  width: 280px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.geo-icon {
+  padding-left: 200px;
+}
+
+.geo-title {
+  padding-left: 16.67px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.phone-icon {
+  padding-left: 67.5px;
+}
+
+.phone-title {
+  padding-left: 14.66px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.second-header {
+  background-color: #252525;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 120%;
+  border-bottom: 2px solid #f55d3e;
+}
+
+.second-header-row ul {
+  display: flex;
+  align-items: center;
+}
+
+.second-header-row li + * {
+  margin-left: 70px;
+}
+
+.second-header-row ul li {
+  color: #fff;
+}
+
+.second-header-row a {
+  transition: color 0.2s ease;
+}
+
+.second-header-row a:hover {
+  color: #f55d3e;
+}

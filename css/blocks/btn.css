@@ -1,0 +1,24 @@
+.btn,
+a.btn {
+  justify-content: center;
+  display: inline-block;
+  align-items: center;
+  display: flex;
+  min-width: 287px;
+  min-height: 64px;
+  line-height: 1.2;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 12px;
+  background-color: #252522;
+  font-weight: 400;
+  font-size: 23px;
+  color: #fff;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover,
+a.btn:hover {
+  opacity: 0.8;
+  color: #fff;
+}
