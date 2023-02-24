@@ -51,8 +51,8 @@
   align-items: center;
   text-align: start;
 
-  top: 60px;
-  right: 827px;
+  top: 0;
+  right: 320px;
 }
 .ellipse8 {
   position: absolute;
@@ -60,8 +60,8 @@
   height: 271px;
   border-radius: 50%;
   background: #f55d3e;
-  top: 290px;
-  right: 515px;
+  top: 220px;
+  left: 635px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,8 +73,8 @@
   height: 271px;
   border-radius: 50%;
   background: #f55d3e;
-  top: 290px;
-  left: 515px;
+  top: 220px;
+  right: 635px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,8 +88,8 @@
   height: 271px;
   border-radius: 50%;
   background: #f55d3e;
-  bottom: 115px;
-  right: 640px;
+  bottom: 60px;
+  left: 525px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,8 +101,8 @@
   height: 271px;
   border-radius: 50%;
   background: #f55d3e;
-  left: 640px;
-  bottom: 115px;
+  right: 525px;
+  bottom: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,4 +178,8 @@ ol > li {
   font-size: 48px;
   color: #ffffff;
   font-weight: bold;
+}
+
+.wave-wrapper {
+  position: relative;
 }
