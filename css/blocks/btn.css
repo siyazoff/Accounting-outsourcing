@@ -1,7 +1,6 @@
 .btn,
 a.btn {
   justify-content: center;
-  display: inline-block;
   align-items: center;
   display: flex;
   min-width: 287px;
@@ -21,4 +20,8 @@ a.btn {
 a.btn:hover {
   opacity: 0.8;
   color: #fff;
+}
+
+a.btn-primary:hover {
+  opacity: 1;
 }

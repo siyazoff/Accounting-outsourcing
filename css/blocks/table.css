@@ -55,3 +55,7 @@ table.rounded-corners > tfoot:not(:last-child) {
   border-bottom: var(--border);
   padding: 12px;
 }
+
+.table {
+  margin-top: 35px;
+}

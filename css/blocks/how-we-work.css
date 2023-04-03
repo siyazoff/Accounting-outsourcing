@@ -87,3 +87,7 @@
   position: absolute;
   bottom: 45px;
 }
+
+.btn-how-we-work li + * {
+  margin-top: 25px;
+}

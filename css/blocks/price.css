@@ -25,7 +25,6 @@
 
 .price-btn {
   display: flex;
-  justify-content: space-between;
 }
 
 .price-btn + * {
@@ -44,7 +43,7 @@
   color: #f55d3e;
   border: 1px solid #f55d3e;
   font-size: 29px;
-  margin-left: 24px;
+  margin-left: 11px;
 }
 
 .ellipse4 {
@@ -73,4 +72,12 @@
   width: 62px;
   top: 168px;
   left: 144px;
+}
+
+.price-btn li {
+  display: inline-block;
+}
+
+.price-btn ul {
+  display: flex;
 }
