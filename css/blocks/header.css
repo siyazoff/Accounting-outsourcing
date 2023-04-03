@@ -1,6 +1,5 @@
 .first-header {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-block: 13px;
 }
 
 .header-logo img {
@@ -43,7 +42,6 @@
 
 .second-header-row ul {
   display: flex;
-  align-items: center;
 }
 
 .second-header-row li + * {
