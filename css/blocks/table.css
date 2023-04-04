@@ -59,3 +59,8 @@ table.rounded-corners > tfoot:not(:last-child) {
 .table {
   margin-top: 35px;
 }
+
+.rounded-corners th:first-child {
+  display: flex;
+  justify-content: center;
+}

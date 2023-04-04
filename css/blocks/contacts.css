@@ -12,7 +12,7 @@
 
 .submit-container {
   border-radius: 18px;
-  height: 666px;
+  height: 690px;
   width: 610px;
   background-color: #fff;
   display: flex;
@@ -33,6 +33,7 @@
   font-size: 24px;
   color: #fff;
   margin-left: 8px;
+  padding-top: 10px;
 }
 
 .number-email a {
@@ -43,9 +44,9 @@
 .map-div {
   padding-top: 30px;
 }
-.map-div img {
-  width: 886px;
-  margin-left: -25px;
+
+.map-div iframe {
+  border-radius: 15px;
 }
 
 .connection {

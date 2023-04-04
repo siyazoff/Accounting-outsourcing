@@ -25,9 +25,10 @@
       <link rel="stylesheet" href="./css/blocks/how-we-work.css" />
       <link rel="stylesheet" href="./css/blocks/contacts.css" />
       <link rel="stylesheet" href="./css/blocks/footer.css" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+      <link rel="stylesheet" href="./css/blocks/modal.css">
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="./bootstrap.min.css">
+
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
       <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
       <script>
@@ -93,7 +94,11 @@
                   </div>
                   <div class="home-btn">
                      <a href="#price" class="btn">Подробнее</a>
-                     <a href="#" class="btn button">Оставить заявку</a>
+                     <a href="#" type="button"
+                     class="btn"
+                     data-bs-toggle="modal"
+                     data-bs-target="#exampleModal" class="btn button">Оставить заявку</a>
+                     
                     
 
                   </div>
@@ -149,7 +154,7 @@
                         <p>Бухгалтерские услуги</p>
                      </div>
                      <div class="l-s-btn">
-                        <a href="#" class="btn btn-primary">Подробнее</a>
+                        <a href="#" class="btn btn-primary1">Подробнее</a>
                      </div>
                   </div>
                   <div class="l-s-card1">
@@ -158,7 +163,7 @@
                         <p>Дополнительные услуги</p>
                      </div>
                      <div class="l-s-btn">
-                        <a href="#" class="btn btn-primary">Подробнее</a>
+                        <a href="#" class="btn btn-primary1">Подробнее</a>
                      </div>
                   </div>
                   <div class="l-s-card1">
@@ -169,7 +174,7 @@
                         </p>
                      </div>
                      <div class="l-s-btn">
-                        <a href="#" class="btn btn-primary">Подробнее</a>
+                        <a href="#" class="btn btn-primary1">Подробнее</a>
                      </div>
                   </div>
                </div>
@@ -296,7 +301,7 @@
                         <td>5000 тг</td>
                      </tr>
                      <tr>
-                        <td>Lorem ipsum dolor sit amet consectetur.</td>
+                        <td>Налоговое заявление, в т.ч. Ответ на уведомление</td>
                         <td>5000 тг</td>
                      </tr>
                      <tr>
@@ -499,7 +504,7 @@
                         <a target="_blank" href="mailto:buh.autsorsing@mail.ru"> buh.autsorsing@mail.ru</a>
                   </div>
                   <div class="map-div">
-                     <img src="./img/map.png" alt="Map">
+                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b94711b6f8296117bbe7835df7355aa2758cd5ff23499ebaa76fc751e2bfa03&amp;width=861&amp;height=331&amp;lang=ru_RU&amp;scroll=true"></script>
                   </div>
                   <img class="telephone" src="./img/telephone.svg" alt="Telephone">
                   <img class="address" src="./img/address.svg" alt="Geo">
@@ -555,37 +560,53 @@
          </div>
          <img class="last-ellipse" src="./img/last-ellipse.png" alt="Last">
       </footer>
-      <div class="modal" id="myModal" style="display:none;">
-         <div class="modal-dialog">
-           <div class="modal-content">
-             <!-- Заголовок модального окна -->
-             <div class="modal-header">
-               <h4 class="modal-title">Модальное окно</h4>
-               <button type="button" class="close" data-dismiss="modal">&times;</button>
-             </div>
-       
-             <!-- Основное содержимое модального окна -->
-             <div class="modal-body">
-               <p>Содержимое модального окна.</p>
-             </div>
-       
-             <!-- Футер модального окна -->
-             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-             </div>
-       
-           </div>
-         </div>
-       </div>
-       <script>
-         $(document).ready(function(){
-           $(".button").click(function(){
-             $("#myModal").modal();
-           });
-         });
-         </script>
-         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  -->
-          <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>  -->
-         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
+
+     
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog ">
+        <div class="modal-content submit-container">
+          
+          <div class="modal-body">
+            <div class="submit-container">
+               <h3 class="submit-heading">Оставить заявку</h3>
+               <form>
+                  <label for="name">Ваше имя:</label>
+                  <input type="text" placeholder="Иван Иванов" id="name" name="name" required>
+                  <label for="phone"> Ваш номер:</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+7 700 700 70 70" required>
+                  <label for="email"> Ваша почта:</label>
+                  <input type="email" id="email" name="email" placeholder="info@mail.com" required>
+               </form>
+               <div class="submit-btn">
+                  <a type="submit" href="#" class="btn">Отправить</a>
+               </div>
+               <div class="privacy-policy">
+                  <p>Нажимая на кнопку вы соглашаетесь на обработку персональных данных в соответствии с политикой конфиденциальности </p>
+               </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
    </body>
    </html>
