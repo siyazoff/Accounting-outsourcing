@@ -18,7 +18,9 @@
 }
 
 .footer-content a {
+  color: inherit;
   transition: color 0.2s ease;
+  text-decoration: none !important;
 }
 
 .footer-content a:hover {
@@ -26,7 +28,7 @@
 }
 
 .footer-content li:last-child {
-  margin-left: 225px;
+  margin-left: 250px;
   font-size: 22px;
 }
 
@@ -47,7 +49,7 @@
   align-items: end;
 
   margin-bottom: 108px;
-  margin-top: 52px;
+  margin-top: 62px;
   padding-left: 60px;
   padding-right: 86px;
 }

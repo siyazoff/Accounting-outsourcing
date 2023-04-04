@@ -12,8 +12,18 @@
   justify-content: space-between;
 }
 
+.header-row a {
+  color: inherit;
+  transition: color 0.2s ease;
+  text-decoration: none !important;
+}
+
+.header-row a:hover {
+  color: #f55d3e;
+}
+
 .geo-icon {
-  padding-left: 200px;
+  padding-left: 300px;
 }
 
 .geo-title {
@@ -34,7 +44,7 @@
 
 .second-header {
   background-color: #252525;
-  padding-top: 18px;
+  padding-top: 25px;
   padding-bottom: 18px;
   line-height: 120%;
   border-bottom: 2px solid #f55d3e;
@@ -42,6 +52,8 @@
 
 .second-header-row ul {
   display: flex;
+  margin: 0px !important;
+  font-size: 20px;
 }
 
 .second-header-row li + * {
@@ -53,7 +65,9 @@
 }
 
 .second-header-row a {
+  color: inherit;
   transition: color 0.2s ease;
+  text-decoration: none !important;
 }
 
 .second-header-row a:hover {
