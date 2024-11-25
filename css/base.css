@@ -50,7 +50,7 @@ Utility
 
 .container-wide {
   position: relative;
-  width: 1700px;
+  max-width: 1700px;
   padding-left: 65px;
   padding-right: 65px;
   margin-left: auto;
